@@ -1,0 +1,4 @@
+#Ignore class files
+*.class
+#Ignore tilde files
+*~
