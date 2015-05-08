@@ -1,1 +1,28 @@
-Please work
+---
+layout: default
+title: Programming In Scala Notes
+---
+
+<div id="home">
+  <h2>Built in Control Structures</h2>
+  <h3>Breaks and continues</h3>
+  <p>There are no breaks and continues in scala. Use boolean variables to automatically cut from a loop.</p>
+  {% highlight scala %}
+  import scala.util.control.Breaks._;
+  import java.io._;
+  
+  val in = new BufferedReader(new InputStreamReader(System.in))
+  
+  breakable {
+  	while(true) {
+  		println("?")
+  		if(in.readLine() =="") break
+  		}
+  	}
+  {% endhighlight %}
+  <!--<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>-->
+</div>
