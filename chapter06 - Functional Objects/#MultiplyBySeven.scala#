@@ -1,0 +1,5 @@
+class Val(n:Int) {
+  private val b = multiplySeven()
+  
+  def multiplySeven() {
+    

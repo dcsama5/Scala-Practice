@@ -1,5 +1,4 @@
-
-  def fileLines(file : java.io.File) = 
+def fileLines(file : java.io.File) = 
   scala.io.Source.fromFile(file).getLines().toList
 
   def grep(pattern: String) = {
